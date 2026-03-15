@@ -1,0 +1,81 @@
+/* Fondo general */
+body{
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #7fe3d6, #1fb6a6);
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+/* Caja del formulario */
+form{
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    width:350px;
+}
+
+/* Título */
+h1{
+    text-align:center;
+    color:#0e7c74;
+    margin-bottom:20px;
+}
+
+/* Fieldset */
+fieldset{
+    border:none;
+}
+
+/* Inputs */
+input, select{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    font-size:14px;
+}
+
+/* Focus */
+input:focus, select:focus{
+    outline:none;
+    border:1px solid #1fb6a6;
+    box-shadow:0 0 5px rgba(31,182,166,0.5);
+}
+
+/* Botón */
+button{
+    width:100%;
+    padding:12px;
+    background:#1fb6a6;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+/* Hover botón */
+button:hover{
+    background:#159488;
+}
+
+/* Mensajes de error */
+.mensaje-error{
+    color:red;
+    font-size:13px;
+    margin-top:-10px;
+    margin-bottom:10px;
+}
+
+/* Input con error */
+.error{
+    border:2px solid red;
+}

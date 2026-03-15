@@ -1,73 +1,93 @@
-/* Fondo general */
-body{
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #7fe3d6, #1fb6a6);
+/* Fuente bonita */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    box-sizing: border-box;
     margin:0;
     padding:0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg,#5ee7df,#2bc0e4);
+    height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    min-height:100vh;
 }
 
-/* Caja del formulario */
+/* contenedor principal */
 form{
     background:white;
     padding:40px;
-    border-radius:12px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.15);
-    width:350px;
+    width:420px;
+    border-radius:14px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
 }
 
-/* Título */
+/* título */
 h1{
     text-align:center;
-    color:#0e7c74;
+    color:#0d6f73;
     margin-bottom:20px;
 }
 
-/* Fieldset */
+/* fieldset */
 fieldset{
     border:none;
 }
 
-/* Inputs */
+/* labels */
+label{
+    font-size:14px;
+    font-weight:500;
+    color:#333;
+}
+
+/* inputs */
 input, select{
     width:100%;
     padding:10px;
-    margin-top:5px;
+    margin-top:6px;
     margin-bottom:15px;
     border-radius:6px;
     border:1px solid #ccc;
     font-size:14px;
+    transition:0.2s;
 }
 
-/* Focus */
+/* focus */
 input:focus, select:focus{
     outline:none;
-    border:1px solid #1fb6a6;
-    box-shadow:0 0 5px rgba(31,182,166,0.5);
+    border-color:#2bc0e4;
+    box-shadow:0 0 6px rgba(43,192,228,0.4);
 }
 
-/* Botón */
+/* botón */
 button{
     width:100%;
     padding:12px;
-    background:#1fb6a6;
-    color:white;
     border:none;
-    border-radius:6px;
+    border-radius:8px;
+    background:linear-gradient(135deg,#5ee7df,#2bc0e4);
+    color:white;
     font-size:16px;
+    font-weight:500;
     cursor:pointer;
-    transition:0.3s;
+    transition:0.25s;
 }
 
-/* Hover botón */
+/* hover botón */
 button:hover{
-    background:#159488;
+    transform:translateY(-2px);
+    box-shadow:0 6px 12px rgba(0,0,0,0.2);
 }
 
-/* Mensajes de error */
+/* errores */
+.error{
+    border:2px solid red;
+}
+
 .mensaje-error{
     color:red;
     font-size:13px;
@@ -75,7 +95,8 @@ button:hover{
     margin-bottom:10px;
 }
 
-/* Input con error */
-.error{
-    border:2px solid red;
+/* checkbox alineado */
+input[type="checkbox"]{
+    width:auto;
+    margin-right:8px;
 }
